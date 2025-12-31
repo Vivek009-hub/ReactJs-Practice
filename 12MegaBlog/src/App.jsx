@@ -5,6 +5,7 @@ import authService from "./appwrite/auth"
 import {login, logout} from "./store/authSlice"
 import { Footer, Header } from './components'
 import { Outlet } from 'react-router-dom'
+import PostForm from './components/post-form/PostForm'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -30,6 +31,7 @@ function App() {
         TODO:  <Outlet />
         </main>
         <Footer />
+        <PostForm/>
       </div>
     </div>
   ) : null
